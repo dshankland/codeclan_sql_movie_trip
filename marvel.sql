@@ -62,3 +62,6 @@ DELETE FROM people WHERE name = 'Tony Goncalves';
 INSERT INTO movies (title, year, show_time) VALUES ('Captain Marvel', 2019, '00:00');
 UPDATE movies SET show_time = '17:20' WHERE title = 'Guardians of the Galaxy 2';
 DELETE FROM people WHERE name = 'Darren Shankland' OR name = 'Ally McGilloway';
+DELETE FROM people WHERE name LIKE 'Da%';
+DELETE FROM people WHERE id >= 2;
+DELETE FROM people WHERE id IN (1,2,3);
